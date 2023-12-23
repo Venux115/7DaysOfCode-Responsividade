@@ -220,11 +220,12 @@ footer
 
 .rodape__botao
 {
+    position: fixed;
     border: none;
     background-color: transparent;
     bottom: 4rem;
     z-index: 10;
-    position: absolute;
+    
     right: 0;
 }
 
@@ -268,14 +269,13 @@ footer
     padding: 0.25rem
 }
 
-
 .opcoes__lista
 {
     display: flex;
     flex-direction: column-reverse;
     z-index: 5;
     bottom: 9.7833375rem;
-    position: absolute;
+    position: fixed;
     right: 0;
 }
 
@@ -299,6 +299,7 @@ footer
 
 .botao__opcoes
 {
+    
     border: none;
     background-color: transparent;
 }
@@ -309,13 +310,15 @@ footer
 }
 
 
+
+
 @media screen and  (min-width:720px) {
     
     .lista-agendamento
     {
         flex-direction: row;
         flex-wrap: wrap;
-        margin:auto;
+
         justify-content: center;
     }
 
@@ -324,6 +327,8 @@ footer
         flex-basis: 20rem;
         
     }
+    
+    
 }
 
 @media screen and (min-width:1280px) {
@@ -340,20 +345,24 @@ footer
         justify-content: center;
     }
 
+    
 
     footer
     {
        position: static; 
-     
+        width: 100%;
     }
     .rodape
     {
+        margin: 0;
         width: 20vw;
-        height: 100vh;
+        height: 100%;
         
        border-radius: 0;
         
     }
+
+   
 
     .rodape__lista
     {
