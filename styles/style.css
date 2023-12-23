@@ -80,6 +80,11 @@ main
     margin: 0.5rem 0;
 }
 
+.boas-vindas__imagem
+{
+   min-width: 10rem;
+}
+
 .lista-agendamento
 {
     display: flex;
@@ -105,6 +110,12 @@ main
     gap: 1rem;
     padding: 1rem 0;
     border-bottom: 1px solid rgba(70, 70, 70, 0.1);
+}
+
+.card__img
+{
+    min-width: 5%;
+   
 }
 
 .card__textos
@@ -295,4 +306,76 @@ footer
 .hidden
 {
     display: none;
+}
+
+
+@media screen and  (min-width:720px) {
+    
+    .lista-agendamento
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin:auto;
+        justify-content: center;
+    }
+
+    .card-consulta
+    {
+        flex-basis: 20rem;
+        
+    }
+}
+
+@media screen and (min-width:1280px) {
+    
+    body
+    {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .lista-agendamento
+    {
+        gap: 3rem;
+        justify-content: center;
+    }
+
+
+    footer
+    {
+       position: static; 
+     
+    }
+    .rodape
+    {
+        width: 20vw;
+        height: 100vh;
+        
+       border-radius: 0;
+        
+    }
+
+    .rodape__lista
+    {
+        flex-direction: column;
+        align-items: start;
+        padding: 2rem 0;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .rodape__lista__item__link
+    {
+        padding-left: 2rem;
+        flex-direction: row;
+        gap: 1rem;
+        width: 100%;
+        
+    }
+
+    .rodape__lista__item__texto
+    {
+        font-size: 1.5rem;
+    }
+
 }
