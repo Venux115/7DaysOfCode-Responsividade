@@ -152,8 +152,8 @@ main
 }
 .card__body
 {
-    padding: 1rem ;
-    padding-bottom: 0;
+    padding: 1rem 1rem 0 1rem;
+
 }
 
 .card__body__texto
@@ -214,8 +214,8 @@ footer
     z-index: 5;
     width: 100vw;
     background-color: var(--branco);
-    border-radius: 1rem 1rem 0rem 0rem;
-    box-shadow: 0px -10px 8px rgba(0, 0, 0, 0.08); 
+    border-radius: 1rem 0;
+    box-shadow: 0 -10px 8px rgba(0, 0, 0, 0.08);
 }
 
 .rodape__botao
@@ -265,7 +265,7 @@ footer
 {
     color: var(--cinza-escuro);
     font-weight: 400;
-    font-size: 0.75;
+    font-size: 0.75rem;
     padding: 0.25rem
 }
 
@@ -385,6 +385,125 @@ footer
     .rodape__lista__item__texto
     {
         font-size: 1.5rem;
+    }
+
+    .formulario {
+        position: fixed;
+        display: flex;
+        top: 10%;
+        left: 25%;
+        width: 50vw;
+        background-color: var(--branco);
+
+        border-radius: 8px;
+
+    }
+
+    .formulario__form
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        gap: 1rem;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .input-group
+    {
+        gap: 0.25rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label
+    {
+        color: var(--cinza-claro);
+        font-size: 1rem;
+    }
+
+    .input
+    {
+        padding: 1rem;
+        border-radius: 8px;
+        border: none;
+        background:  var(--branco);
+        border: 1px solid var(--cinza-claro);
+
+    }
+
+    .input:hover
+    {
+        border: 1px solid var(--cinza-escuro);
+    }
+
+    .input:focus
+    {
+        border: 2px solid var(--azul);
+    }
+
+    .input option
+    {
+        font-family: var(--font-principal);
+        padding: 0.5rem;
+        border-radius: 8px;
+
+    }
+
+    .button-group
+    {
+        display: flex;
+        justify-content: center;
+        gap:1rem;
+    }
+
+    .botao__form
+    {
+        flex-basis: 10rem;
+        cursor: pointer ;
+        border: 2px solid #57A4FF;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    #btn_cancelar
+    {
+        background-color: transparent;
+        color: var(--azul);
+    }
+
+    #btn_cancelar:hover
+    {
+        background:#4894FF;
+        color: var(--branco);
+    }
+
+    #btn_cancelar:active
+    {
+        background:#4786F0;
+
+    }
+
+    #btn_salvar
+    {
+        background-color: var(--azul);
+        color: var(--branco);
+        border: 2px solid var(--azul)
+    }
+
+    #btn_salvar:hover
+    {
+        background-color: #4786F0;
+    }
+
+    #btn_salvar:active
+    {
+        background-color: #4062C9;
+    }
+
+    .hidden{
+        display: none;
     }
 
 }
