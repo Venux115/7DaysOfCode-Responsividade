@@ -1,9 +1,16 @@
 const btMaisOpcoes = document.querySelector(".rodape__botao")
 const ulOpcoes = document.querySelector(".opcoes__lista")
+const formalario = document.querySelector(".formulario")
 const main = document.querySelector(".overlay")
 
 
 btMaisOpcoes.addEventListener("click", () => {
-    ulOpcoes.classList.toggle("hidden")
-    main.classList.toggle("hidden")
+    if (window.innerWidth < 1280){
+        ulOpcoes.classList.toggle("hidden")
+        main.classList.toggle("hidden")
+    }else{
+        formalario.classList.toggle("hidden")
+        main.classList.toggle("hidden")
+    }
+
 })
